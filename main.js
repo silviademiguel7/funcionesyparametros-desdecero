@@ -7,13 +7,26 @@ function writeThis(texto,repeat){
     }
 }
 
-const words = ['Patata','Aguacate','Pizza'];
-const repeat = [10,7,50];
-const max=10;
-function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);
-  }
+const myWordList =  [
+    {
+      text: 'Pencil',
+      total: 6
+    },
+    {
+      text: 'Thermo',
+      total: 2
+    },
+    {
+      text: 'TV',
+      total: 8
+    },
+    {
+      text: 'Phone',
+      total: 4
+    }
+  ];
 
-for(let j= 0; j < words.length ; j++){
-    writeThis(words[j],getRandomNumber(max));
-}
+for(let j= 0; j < myWordList.length ; j++){
+    
+    writeThis(myWordList[j].text,myWordList[j].total);
+} 
